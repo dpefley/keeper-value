@@ -1,0 +1,24 @@
+{
+  "name": "keeper-value",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpefley/keeper-value.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpefley/keeper-value/issues"
+  },
+  "homepage": "https://github.com/dpefley/keeper-value#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "sass": "^1.26.3"
+  },
+  "scripts": {
+    "node-sass": "node-sass --output-style compressed -o dist/css src/scss"
+  }
+}
