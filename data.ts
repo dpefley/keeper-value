@@ -2,14 +2,16 @@ const playerNamesByRank = ["Ronald Acuna Jr.","Mike Trout","Juan Soto","Cody Bel
 const playerPostionRanks = ["OF1","OF2","OF3","OF4","SS1","OF5","3B1","OF6","3B2","SS3","SS4","3B3","OF7","SS5","3B4","SP1","SS6","OF8","SS7","SP2","OF9","SP3","OF10","1B2","3B5","DH1","2B2","SS8","SP4","3B6","2B3","3B7","1B3","SS9","DH2","OF11","3B8","SP6","SP7","OF12","3B9","SP8","3B10","SP9","OF14","2B5","SP10","SS11","2B6","SP11","1B4","SP12","OF15","OF16","SP13","SP14","OF17","SS12","SP15","OF18","SP16","OF19","SP17","SS13","OF20","1B5","OF21","SP18","OF22","SP19","1B6","SP20","1B7","SS14","OF23","SP21","3B11","OF24","C1","SP22","OF25","SP23","C2","SP24","OF26","RP1","2B7","SP25","RP2","SP26","OF27","SS15","OF28","OF29","OF30","SP27","2B8","1B9","SP28","SP29","2B9","OF32","SS17","OF33","SP30","1B10","RP3","OF34","OF35","SS18","SP32","1B11","OF36","SP33","OF37","OF38","OF39","SP34","SP35","OF40","RP5","3B14","OF41","2B11","SP36","OF42","OF43","RP6","C3","SP37","C4","RP7","3B17","SP38","OF44","2B12","SP39","OF45","SP40","SP41","3B18","RP8","SP42","2B14","SP43","RP9","SS19","3B19","SP44","OF46","SP45","OF47","RP11","C5","SP46","2B16","OF49","SS20","SP47","3B20","OF50","SP48","OF51","OF52","RP12","3B21","SP49","SP50","OF53","RP13","SP51","C6","DH4","OF54","C7","RP14","OF55","1B16","RP15","2B18","OF56","1B17","RP16","1B18","OF57","RP17","C8","2B19","RP18","3B24","3B25","1B19","1B20","3B27","SS21","SS22","SS23","OF59","SP52","2B20","RP19","C9","SP53","2B21","C10","OF60","SS24","SP54","DH5","RP20","SS25","SS26","3B28","RP21","SP55","3B29","SS27","RP22","OF62","RP23","OF63","OF64","DH6","SS28","RP24","OF65","OF66","SS29","SS30","SP56","OF67","OF68","SS31","SP57","SP58","OF69","RP25","SP59","SS32","C11","RP26","OF70","SP60","SS33","OF71","SP61","3B30","RP27","SP62","1B21","SP63","C12","1B22","SP64","OF72","SP65","OF73","OF74","SP66","C13","SP67","DH7","SP68","RP29","2B25","3B31","RP30","3B32","1B25","RP31","SP69","RP32","SP70","OF75","SP71","OF76","OF77","OF78","SP72","RP33","1B26","1B27","SP73","SP74","OF79","C14","SP75","SP76","1B28","RP34","C15","SP77","RP36","2B26","RP37","2B27","2B28","RP38","1B29","1B30"];
 
 let playerArray = [];
+interface player {
+    name: string,
+    rank: number,
+    position_rank: string
+}
 
 function generatePlayerArray() {
     for (let i = 0; i < playerNamesByRank.length; i++) {
-        let currentPlayer = {
-            name: null,
-            rank: null,
-            position_rank: null
-        };
+        let currentPlayer:player;
+        
         currentPlayer.name = playerNamesByRank[i];
         currentPlayer.rank = playerNamesByRank.indexOf(currentPlayer.name);
         currentPlayer.position_rank = playerPostionRanks[i];

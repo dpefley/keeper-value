@@ -1,4 +1,3 @@
-let currentPlayer = "";
 
 function displayPlayers() {
     document.getElementById("get-players").style.display = "none";
@@ -9,6 +8,5 @@ function displayPlayers() {
         document.getElementById("player-display-list").innerHTML += "<li>" + playerInArray.name + "</li>";
     });
 
-    let player = document.getElementById("playerName")["value"];
-    currentPlayer = player;
+    // let player = document.getElementById("playerName")["value"];
 }
