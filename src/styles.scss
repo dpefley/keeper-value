@@ -1,0 +1,19 @@
+.keeper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    &-header {
+        order: 1;
+    }
+
+    &-main {
+        order: 2;
+        display: flex;
+    }
+
+    &-display {
+        order: 3;
+    }
+}

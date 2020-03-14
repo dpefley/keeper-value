@@ -1,0 +1,18 @@
+.keeper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.keeper-header {
+  order: 1;
+}
+.keeper-main {
+  order: 2;
+  display: flex;
+}
+.keeper-display {
+  order: 3;
+}
+
+/*# sourceMappingURL=styles.css.map */
